@@ -21,22 +21,22 @@ export const routes = [
     ]
   },
 
-  { // FormCreate
-    path: '/form-create',
+  { // Test
+    path: '/test',
     component: Layout,
-    redirect: '/form-create/import',
-    name: 'FormCreate',
+    redirect: '/test/import',
+    name: 'Test',
     meta: {
-      title: 'FormCreate'
+      title: 'Test'
     },
     children: [
       {
         path: 'import',
-        name: 'FormCreateImport',
+        name: 'TestImport',
         meta: {
           title: '导入'
         },
-        component: () => import('@/views/form-create/import')
+        component: () => import('@/views/test/import')
       }
     ]
   }
