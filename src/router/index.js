@@ -37,6 +37,14 @@ export const routes = [
           title: '导入'
         },
         component: () => import('@/views/test/import')
+      },
+      {
+        path: 'size',
+        name: 'Size',
+        meta: {
+          title: 'Size'
+        },
+        component: () => import('@/views/test/size')
       }
     ]
   }
