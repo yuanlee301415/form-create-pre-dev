@@ -45,6 +45,14 @@ export const routes = [
           title: 'Size'
         },
         component: () => import('@/views/test/size')
+      },
+      {
+        path: 'unsupported',
+        name: 'Unsupported',
+        meta: {
+          title: 'Unsupported'
+        },
+        component: () => import('@/views/test/unsupported')
       }
     ]
   }
